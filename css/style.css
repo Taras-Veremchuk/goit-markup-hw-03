@@ -1,0 +1,189 @@
+/* GENERAL STYLES */
+:root {
+  --secondary-text-color: #212121;
+  --primary-text-color: #757575;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --hero-footer-background-color: #2f303a;
+  --team-button-background-color: #f5f4fa;
+  --hero-button-background-color: #188ce8;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* HEADER */
+.header {
+  background-color: var(--white-color);
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo > .last-word {
+  color: var(--black-color);
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-list-item .link {
+  color: var(--secondary-text-color);
+}
+.nav-list .link.current {
+  color: var(--accent-color);
+}
+.contact-list-item .link {
+  color: var(--primary-text-color);
+}
+.contact-list .link:hover,
+.contact-list .link:focus,
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+}
+/* HERO */
+.hero {
+  background: var(--hero-footer-background-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--accent-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-button-background-color);
+  cursor: pointer;
+}
+/* ADVANTAGE*/
+.feature-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.feature-list-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ACTIVITY */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* TEAM */
+.section-team {
+  background-color: var(--team-button-background-color);
+}
+.team-list-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+.team-list-item {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+}
+/* FOOTER */
+.footer {
+  background: var(--hero-footer-background-color);
+}
+.footer-logo .last-word {
+  color: var(--white-color);
+}
+.footer-link {
+  color: var(--footer-text-color);
+}
+.footer-map-link {
+  color: var(--white-color);
+}
+.footer-list-item .link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+/* PORTFOLIO */
+.list-portfolio-item .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background: var(--team-button-background-color);
+}
+.btn:hover,
+.btn:focus {
+  color: var(--white-color);
+  background: var(--accent-color);
+  cursor: pointer;
+}
+.project-list-item .project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.project-list-item .project-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
